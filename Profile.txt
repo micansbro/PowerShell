@@ -1,3 +1,11 @@
+If ((Test-Path H:\) -ne $True) {Net Use H:\HKFile\Home$\Mansbro}
+
+Set-Location h:\PowerShell
+Import-Module PSRealine
+
+# Weclome Message
+Write-host Hi Michael Welcome to Powershell $host.version
+
 Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 
 # Load posh-git module from current directory
