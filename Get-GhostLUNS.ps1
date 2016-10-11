@@ -17,7 +17,7 @@ Get-GhostLUNS -Server 'US-host01.domain.com'
 #>
     [CmdletBinding()]
     param (
-        [string()]$Server
+        [string[]]$Server='*'
     )
     BEGIN {
         $esxhosts=Get-VMhost $Server
