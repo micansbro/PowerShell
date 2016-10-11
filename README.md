@@ -1,3 +1,3 @@
 # PowerShell
 
-A collection of useful PowerShell scripts i have written.
+A collection of PowerShell scripts and functions i have written for Windows and VMware products.
