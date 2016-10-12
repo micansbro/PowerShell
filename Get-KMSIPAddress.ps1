@@ -1,21 +1,15 @@
 ﻿Function Get-KMSIPAddress {
-
 <#
 .SYNOPSIS
 Gets the configured KMS IP address on a computer.
-
 .DESCRIPTION
 The function gets the IP address of the KMS server as listed in the registry.
-
 .PARAMETER ComputerName
 Specifies which Computer to get the KMS IP Address from.
-
 .EXAMPLE
  Get-KMSIPAddress -Computername "Server01"
-
 .EXAMPLE
 "Server01", "Server02" | Get-KMSIPAddress
- 
 #>
     [CmdletBinding()]
     param(
@@ -28,6 +22,7 @@ Specifies which Computer to get the KMS IP Address from.
 
 
     BEGIN { }
+
     PROCESS {
         Write-Verbose "Beginning PROCESS block"
         foreach ($Computer in $Computername) {
