@@ -17,11 +17,14 @@ Get-GhostLUNS -Server 'US-host01.domain.com'
 #>
     [CmdletBinding()]
     param (
+            [Parameter( ValueFromPipeline=$True,
+                        HelpMessage='Name of ESXi host')]
         [string[]]$Server='*'
     )
     BEGIN {
         $esxhosts=Get-VMhost $Server
     }
+
     PROCESS {
         foreach ($esx in $esxhosts) {
             $esx.name
