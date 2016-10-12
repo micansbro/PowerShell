@@ -1,12 +1,11 @@
 ﻿function Get-ShutdownEvent {
 <#
 .SYNOPSIS
-Gets the Windows events which show the last shutdown.
+Retrievs the Windows events which show the last shutdown.
 .DESCRIPTION
-
+Retrievs the Windows events which show the last shutdown.
 .PARAMETER Computername
 Specifys which computer to get the Windows events from.
-
 .EXAMPLE
  Get-ShutdownEvent -Computername ADServer01
  
